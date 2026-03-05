@@ -1,90 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Angel Vera | Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Data Analyst & Scientist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Fraunces:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-<h1>Angel Vera</h1>
-<p>Data Analyst | Data Science Student | Python | SQL | Power BI</p>
-</header>
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
 
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
 
-<section id="about">
-<h2>About Me</h2>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="nav-logo-bracket">[</span>
+      <span class="nav-logo-text">Angel Vera</span>
+      <span class="nav-logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Stack</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-<p>
-I am a student focused on Data Science and Data Analysis. 
-I work with Python, SQL and Power BI to transform data into insights.
-</p>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-lines"></div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="tag-dot"></span>
+        Available for work
+      </div>
+      <h1 class="hero-title reveal">
+        <span class="hero-title-line">Data</span>
+        <span class="hero-title-line italic">Analyst</span>
+        <span class="hero-title-line">&amp; Scientist</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Turning raw data into decisions — through clean code,<br>
+        sharp analysis, and compelling visuals.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <!-- IMAGE PLACEHOLDER: Replace with your own photo -->
+      <div class="hero-img-frame">
+        <!--
+         <div class="hero-img-placeholder">
+          <span class="placeholder-icon">👤</span>
+          <span class="placeholder-text">Your Photo Here<br><small>Recommended: 480×600px</small></span>
+        </div>
+        -->
+        <img class="img-profile" src="./images/profile2_img.png" alt="Angel Vera — Data Analyst" />
+        <div class="hero-img-accent"></div>
+      </div>
+      <div class="hero-floating-chip chip-1"><span>Python</span></div>
+      <div class="hero-floating-chip chip-2"><span>Power BI</span></div>
+      <div class="hero-floating-chip chip-3"><span>SQL</span></div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-</section>
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label reveal">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">The story<br><em>behind the data.</em></h2>
+          <p>
+            Hi, I'm <strong>Angel Vera</strong> — a data analyst and scientist with a passion for uncovering patterns that drive real decisions. I bridge the gap between raw datasets and actionable business intelligence.
+          </p>
+          <p>
+            With hands-on experience in the full data pipeline — from cleaning and exploration to modeling and visualization — I help teams move from <em>gut feeling</em> to <em>data-driven confidence</em>.
+          </p>
+          <p>
+            Beyond analytics, I also build clean, accessible web interfaces to present insights in a way anyone can understand.
+          </p>
+          <a href="#" class="btn btn-outline" download>Download CV</a>
+          <!-- Add the CV file to download -->
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="12">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Tools Mastered</span>
+          </div>
+          <div class="stat-card highlight">
+            <!-- IMAGE PLACEHOLDER: Small secondary photo or icon -->
+            <div class="stat-img-placeholder">
+              <span>🖼</span>
+              <small>Optional photo</small>
+            </div>
+            <!-- Uncomment to use a second image:
+            <img src="assets/workspace.jpg" alt="Workspace" />
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- SKILLS / STACK -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label reveal">02 — Stack</div>
+      <h2 class="section-title centered reveal">Tools of<br><em>the trade.</em></h2>
 
-<section id="projects">
+      <div class="skills-categories reveal">
 
-<h2>Projects</h2>
+        <div class="skill-category">
+          <h3 class="category-title">Data &amp; Analysis</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-icon">📊</div>
+              <span class="skill-name">Excel</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🗄️</div>
+              <span class="skill-name">SQL</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🐍</div>
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🐼</div>
+              <span class="skill-name">Pandas</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
 
-<div class="project">
+        <div class="skill-category">
+          <h3 class="category-title">Visualization</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-icon">📈</div>
+              <span class="skill-name">Matplotlib</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🎨</div>
+              <span class="skill-name">Seaborn</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">⚡</div>
+              <span class="skill-name">Power BI</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="87"></div></div>
+            </div>
+          </div>
+        </div>
 
-<h3>Power BI Dashboard</h3>
+        <div class="skill-category">
+          <h3 class="category-title">Web &amp; Dev Tools</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-icon">🌐</div>
+              <span class="skill-name">HTML &amp; CSS</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">⚙️</div>
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🔧</div>
+              <span class="skill-name">Git &amp; GitHub</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
 
-<p>
-Data analysis project using Python and Power BI to visualize trends and insights.
-</p>
+      </div>
+    </div>
+  </section>
 
-<a href="#">View Project</a>
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label reveal">03 — Projects</div>
+      <h2 class="section-title reveal">Work that<br><em>speaks data.</em></h2>
 
-</div>
+      <div class="projects-grid">
 
+        <!-- PROJECT 1 -->
+        <article class="project-card reveal" data-index="01">
+          <div class="project-img-wrap">
+            <!-- IMAGE PLACEHOLDER: Replace src with your project screenshot -->
+            <div class="project-img-placeholder">
+              <span>🖼</span>
+              <p>Project Screenshot<br><small>Recommended: 800×500px</small></p>
+              <img src="./images/power_bi_analysis.png" alt="Sales Dashboard" />
+            </div>
 
-<div class="project">
+            <div class="project-overlay">
+              <a href="#" class="project-link" target="_blank" rel="noopener">View Project ↗</a>
+              <a href="https://github.com/yourusername/project1" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Excel</span>
+            </div>
+            <h3 class="project-title">Sales Performance Dashboard</h3>
+            <p class="project-desc">
+              An interactive Power BI dashboard connecting to a SQL database, delivering real-time KPIs, regional breakdowns, and trend forecasting for a retail client.
+            </p>
+          </div>
+        </article>
 
-<h3>Python Data Analysis</h3>
+        <!-- PROJECT 2 -->
+        <article class="project-card reveal" data-index="02">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <span>🖼</span>
+              <p>Project Screenshot<br><small>Recommended: 800×500px</small></p>
+              <img src="images/python_for_DA.png" alt="Python Data Analysis" />
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" target="_blank" rel="noopener">View Project ↗</a>
+              <a href="https://github.com/yourusername/project2" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Seaborn</span>
+            </div>
+            <h3 class="project-title">Customer Churn Analysis</h3>
+            <p class="project-desc">
+              Exploratory data analysis and predictive modeling using Python and Pandas to identify at-risk customers, resulting in a 15% reduction in churn rate.
+            </p>
+          </div>
+        </article>
 
-<p>
-Exploratory data analysis using Python libraries such as Pandas and Matplotlib.
-</p>
+        <!-- PROJECT 3 -->
+        <article class="project-card reveal" data-index="03">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <span>🖼</span>
+              <p>Project Screenshot<br><small>Recommended: 800×500px</small></p>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" target="_blank" rel="noopener">View Project ↗</a>
+              <a href="https://github.com/yourusername/project3" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">SQL</span>
+            </div>
+            <h3 class="project-title">Market Trend Forecasting</h3>
+            <p class="project-desc">
+              Time-series analysis on financial datasets using Python, visualized with Matplotlib for executive-level reporting and strategic planning.
+            </p>
+          </div>
+        </article>
 
-<a href="#">View Project</a>
+        <!-- PROJECT 4 -->
+        <article class="project-card reveal" data-index="04">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <span>🖼</span>
+              <p>Project Screenshot<br><small>Recommended: 800×500px</small></p>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" target="_blank" rel="noopener">View Project ↗</a>
+              <a href="https://github.com/yourusername/project4" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Excel</span>
+              <span class="tag">Power BI</span>
+            </div>
+            <h3 class="project-title">HR Analytics Report</h3>
+            <p class="project-desc">
+              Workforce data pipeline from Excel sources into a Power BI report, providing HR leadership with attrition insights and headcount planning views.
+            </p>
+          </div>
+        </article>
 
-</div>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <!-- ░░ CONTACT ░░ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal">04 — Contact</div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <h2 class="section-title">Let's build<br><em>something great.</em></h2>
+          <p class="contact-sub">
+            Open to freelance projects, full-time roles, and collaborations.
+            If you have data that needs a story, let's talk.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:aive9847@gmail.com" class="contact-item">
+              <span class="contact-item-icon">✉</span>
+              <span>aive9847@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/angel-verae" target="_blank" rel="noopener" class="contact-item">
+              <span class="contact-item-icon">in</span>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/AngelVera22" target="_blank" rel="noopener" class="contact-item">
+              <span class="contact-item-icon">⌥</span>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Send Message →</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
 
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">Angel Vera</span>
+      <span class="footer-copy">© <span id="year"></span> — Built with HTML, CSS &amp; JS</span>
+      <a href="#hero" class="footer-top">↑ Back to top</a>
+    </div>
+  </footer>
 
-<section id="skills">
-
-<h2>Skills</h2>
-
-<ul>
-<li>Python</li>
-<li>SQL</li>
-<li>Power BI</li>
-<li>HTML / CSS</li>
-<li>JavaScript</li>
-</ul>
-
-</section>
-
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>Email: yourmail@email.com</p>
-<p>LinkedIn: linkedin.com/in/angelvera</p>
-
-</section>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
